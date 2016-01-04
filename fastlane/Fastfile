@@ -42,7 +42,7 @@ platform :ios do
     sigh
     gym # Build your app - more options available
     #pilot
-    crashlytics(notifications: false)
+    #crashlytics(notifications: false)
 
     # sh "your_script.sh"
     # You can also use other beta testing services here
