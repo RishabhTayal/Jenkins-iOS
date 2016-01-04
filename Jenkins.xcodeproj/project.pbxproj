@@ -286,6 +286,7 @@
 				8476FF24EE8F767EF12B5227 /* Embed Pods Frameworks */,
 				73EE2078BD004DBE58B90845 /* Copy Pods Resources */,
 				692480371C3B1C8A00C45A7E /* Embed Watch Content */,
+				6924803B1C3B264800C45A7E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -402,6 +403,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6924803B1C3B264800C45A7E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 02d3f7db22ac1a3e538528547a694d5230eb8278 af6ede98bc0742057c556b0ed733e4c57ae435cd7cc81f516bb2b4e456b7e234";
+		};
 		73EE2078BD004DBE58B90845 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -736,6 +750,7 @@
 				692480321C3B1C8A00C45A7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		692480341C3B1C8A00C45A7E /* Build configuration list for PBXNativeTarget "Jenkins-Watch" */ = {
 			isa = XCConfigurationList;
@@ -744,6 +759,7 @@
 				692480361C3B1C8A00C45A7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		697B38561C3B0B0300516E79 /* Build configuration list for PBXProject "Jenkins" */ = {
 			isa = XCConfigurationList;
