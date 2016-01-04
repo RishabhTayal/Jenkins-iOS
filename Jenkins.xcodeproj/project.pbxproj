@@ -14,6 +14,10 @@
 		697B38661C3B0B0300516E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697B38651C3B0B0300516E79 /* Assets.xcassets */; };
 		697B38691C3B0B0300516E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697B38671C3B0B0300516E79 /* LaunchScreen.storyboard */; };
 		697B38741C3B0B0300516E79 /* JenkinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B38731C3B0B0300516E79 /* JenkinsUITests.swift */; };
+		697B387F1C3B0F8B00516E79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B387E1C3B0F8B00516E79 /* Constants.swift */; };
+		697B38811C3B100B00516E79 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B38801C3B100B00516E79 /* ListViewController.swift */; };
+		697B38831C3B113000516E79 /* BackendUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B38821C3B113000516E79 /* BackendUtil.swift */; };
+		698DA59C1C3B157800E522CD /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698DA59B1C3B157800E522CD /* Job.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		697B386F1C3B0B0300516E79 /* JenkinsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenkinsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		697B38731C3B0B0300516E79 /* JenkinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsUITests.swift; sourceTree = "<group>"; };
 		697B38751C3B0B0300516E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697B387E1C3B0F8B00516E79 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		697B38801C3B100B00516E79 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		697B38821C3B113000516E79 /* BackendUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendUtil.swift; sourceTree = "<group>"; };
+		698DA59B1C3B157800E522CD /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		A9F25E59DAD37477CAD8D0B9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B42567680F70ED45730A2312 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +102,10 @@
 			children = (
 				697B385E1C3B0B0300516E79 /* AppDelegate.swift */,
 				697B38601C3B0B0300516E79 /* ViewController.swift */,
+				697B38801C3B100B00516E79 /* ListViewController.swift */,
+				698DA59B1C3B157800E522CD /* Job.swift */,
+				697B38821C3B113000516E79 /* BackendUtil.swift */,
+				697B387E1C3B0F8B00516E79 /* Constants.swift */,
 				697B38621C3B0B0300516E79 /* Main.storyboard */,
 				697B38651C3B0B0300516E79 /* Assets.xcassets */,
 				697B38671C3B0B0300516E79 /* LaunchScreen.storyboard */,
@@ -273,7 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				697B38611C3B0B0300516E79 /* ViewController.swift in Sources */,
+				698DA59C1C3B157800E522CD /* Job.swift in Sources */,
 				697B385F1C3B0B0300516E79 /* AppDelegate.swift in Sources */,
+				697B38811C3B100B00516E79 /* ListViewController.swift in Sources */,
+				697B387F1C3B0F8B00516E79 /* Constants.swift in Sources */,
+				697B38831C3B113000516E79 /* BackendUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
