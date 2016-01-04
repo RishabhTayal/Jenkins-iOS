@@ -185,6 +185,7 @@
 				TargetAttributes = {
 					697B385A1C3B0B0300516E79 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CEBY93VF85;
 					};
 					697B386E1C3B0B0300516E79 = {
 						CreatedOnToolsVersion = 7.2;
@@ -419,6 +420,7 @@
 			baseConfigurationReference = A9F25E59DAD37477CAD8D0B9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Jenkins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtayal.Jenkins;
@@ -431,6 +433,7 @@
 			baseConfigurationReference = B42567680F70ED45730A2312 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Jenkins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtayal.Jenkins;
