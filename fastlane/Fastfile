@@ -40,7 +40,7 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     sigh
-    gym(export_method: 'ad-hoc')
+    gym(export_method: 'ad-hoc', scheme: 'Jenkins')
     #pilot
     crashlytics({notifications: false,  api_token: "02d3f7db22ac1a3e538528547a694d5230eb8278",
        build_secret: "af6ede98bc0742057c556b0ed733e4c57ae435cd7cc81f516bb2b4e456b7e234"})
