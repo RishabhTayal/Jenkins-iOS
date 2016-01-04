@@ -77,6 +77,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		692480121C3B198000C45A7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				697B38621C3B0B0300516E79 /* Main.storyboard */,
+				697B38651C3B0B0300516E79 /* Assets.xcassets */,
+				697B38671C3B0B0300516E79 /* LaunchScreen.storyboard */,
+				697B386A1C3B0B0300516E79 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		697B38521C3B0B0300516E79 = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +117,7 @@
 				698DA59B1C3B157800E522CD /* Job.swift */,
 				697B38821C3B113000516E79 /* BackendUtil.swift */,
 				697B387E1C3B0F8B00516E79 /* Constants.swift */,
-				697B38621C3B0B0300516E79 /* Main.storyboard */,
-				697B38651C3B0B0300516E79 /* Assets.xcassets */,
-				697B38671C3B0B0300516E79 /* LaunchScreen.storyboard */,
-				697B386A1C3B0B0300516E79 /* Info.plist */,
+				692480121C3B198000C45A7E /* Supporting Files */,
 			);
 			path = Jenkins;
 			sourceTree = "<group>";
