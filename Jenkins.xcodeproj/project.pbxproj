@@ -15,6 +15,7 @@
 		692480291C3B1C8A00C45A7E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692480281C3B1C8A00C45A7E /* ExtensionDelegate.swift */; };
 		6924802B1C3B1C8A00C45A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6924802A1C3B1C8A00C45A7E /* Assets.xcassets */; };
 		6924802F1C3B1C8A00C45A7E /* Jenkins-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 692480151C3B1C8A00C45A7E /* Jenkins-Watch.app */; };
+		6924803A1C3B1E6A00C45A7E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692480391C3B1E6A00C45A7E /* Queue.swift */; };
 		697B385F1C3B0B0300516E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B385E1C3B0B0300516E79 /* AppDelegate.swift */; };
 		697B38611C3B0B0300516E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B38601C3B0B0300516E79 /* ViewController.swift */; };
 		697B38641C3B0B0300516E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697B38621C3B0B0300516E79 /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		692480281C3B1C8A00C45A7E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		6924802A1C3B1C8A00C45A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6924802C1C3B1C8A00C45A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		692480391C3B1E6A00C45A7E /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		697B385B1C3B0B0300516E79 /* Jenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jenkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697B385E1C3B0B0300516E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		697B38601C3B0B0300516E79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,15 @@
 			path = "Jenkins-Watch Extension";
 			sourceTree = "<group>";
 		};
+		692480381C3B1E5E00C45A7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				698DA59B1C3B157800E522CD /* Job.swift */,
+				692480391C3B1E6A00C45A7E /* Queue.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		697B38521C3B0B0300516E79 = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +212,7 @@
 				697B385E1C3B0B0300516E79 /* AppDelegate.swift */,
 				697B38601C3B0B0300516E79 /* ViewController.swift */,
 				697B38801C3B100B00516E79 /* ListViewController.swift */,
-				698DA59B1C3B157800E522CD /* Job.swift */,
+				692480381C3B1E5E00C45A7E /* Models */,
 				697B38821C3B113000516E79 /* BackendUtil.swift */,
 				697B387E1C3B0F8B00516E79 /* Constants.swift */,
 				692480121C3B198000C45A7E /* Supporting Files */,
@@ -320,6 +331,7 @@
 					};
 					692480201C3B1C8A00C45A7E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CEBY93VF85;
 					};
 					697B385A1C3B0B0300516E79 = {
 						CreatedOnToolsVersion = 7.2;
@@ -452,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				697B38611C3B0B0300516E79 /* ViewController.swift in Sources */,
+				6924803A1C3B1E6A00C45A7E /* Queue.swift in Sources */,
 				698DA59C1C3B157800E522CD /* Job.swift in Sources */,
 				697B385F1C3B0B0300516E79 /* AppDelegate.swift in Sources */,
 				697B38811C3B100B00516E79 /* ListViewController.swift in Sources */,
@@ -519,6 +532,7 @@
 		692480311C3B1C8A00C45A7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Jenkins-Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtayal.Jenkins.watchkitapp.watchkitextension;
@@ -533,6 +547,7 @@
 		692480321C3B1C8A00C45A7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Jenkins-Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtayal.Jenkins.watchkitapp.watchkitextension;

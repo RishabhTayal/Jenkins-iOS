@@ -12,9 +12,23 @@ class BackendUtil: NSObject {
     
     typealias CompletionBlock =  (result: AnyObject?, error: NSError?) -> Void
     
+    static let baseURl = NSUserDefaults.standardUserDefaults().stringForKey(HostBaseURLKey)!
+    
+    class func getQueue(completion: CompletionBlock) {
+        
+        let url = baseURl + "/queue/api/json?pretty=true"
+        getWith(url, completion: completion)
+        
+    }
+    
+    class func getJobs(completion: CompletionBlock) {
+        let url = baseURl + "/api/json?pretty=true"
+        getWith(url, completion: completion)
+    }
+    
     class func getWith(url: String, completion: CompletionBlock) {
         let request = NSMutableURLRequest(URL: (NSURL(string: url))!)
-        //        request.HTTPMethod = "GET"
+        request.HTTPMethod = "GET"
         let session = NSURLSession.sharedSession()
         session.dataTaskWithRequest(request) { (d: NSData?, r: NSURLResponse?, e: NSError?) -> Void in
             if let data = d {

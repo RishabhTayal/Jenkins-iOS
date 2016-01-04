@@ -9,43 +9,79 @@
 import UIKit
 
 class ListViewController: UIViewController {
-
-    var dataArray: [Job] = []
+    
+    enum SectionType: Int {
+        case Queue
+        case Jobs
+        case Count
+    }
+    
+    var jobsArray: [Job] = []
+    var queueArray: [Queue] = []
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.tableView.tableFooterView = UIView()
         
-        let url = NSUserDefaults.standardUserDefaults().stringForKey(HostBaseURLKey)
-        BackendUtil.getWith(url!) { (result, error) -> Void in
+        BackendUtil.getJobs { (result, error) -> Void in
             if let result = result as? Dictionary<String, AnyObject> {
-                print(result)
-                self.dataArray = []
+                self.jobsArray = []
                 for job in result["jobs"] as! Array<Dictionary<String, AnyObject>> {
                     let jobObj = Job(dictionary: job)
-                    self.dataArray.append(jobObj)
+                    self.jobsArray.append(jobObj)
                 }
                 self.tableView.reloadData()
             }
-        }        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        }
+        
+        BackendUtil.getQueue { (result, error) -> Void in
+            if let result = result as? Dictionary<String, AnyObject> {
+                print(result)
+                self.queueArray = []
+                for queue in result["items"] as! Array<Dictionary<String, AnyObject>> {
+                    let queueObj = Queue(dictionary: queue)
+                    self.queueArray.append(queueObj)
+                }
+                self.tableView.reloadData()
+            }
+        }
     }
 }
 
 extension ListViewController: UITableViewDataSource {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return SectionType.Count.rawValue
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == SectionType.Jobs.rawValue {
+            return "Jobs"
+        }
+        if section == SectionType.Queue.rawValue {
+            return "Queue"
+        }
+        return ""
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.count
+        if section == SectionType.Jobs.rawValue {
+            return jobsArray.count
+        }
+        if section == SectionType.Queue.rawValue {
+            return queueArray.count
+        }
+        return 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell")
-        cell?.textLabel?.text = dataArray[indexPath.row].name
+        if indexPath.section == SectionType.Jobs.rawValue {
+            cell?.textLabel?.text = jobsArray[indexPath.row].name
+        }
         return cell!
     }
 }
