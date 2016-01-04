@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		13DD86CBE419C11E68A8E510 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38084CFD6AC0A425E66622AB /* libPods.a */; };
+		692480191C3B1C8A00C45A7E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692480171C3B1C8A00C45A7E /* Interface.storyboard */; };
+		6924801B1C3B1C8A00C45A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6924801A1C3B1C8A00C45A7E /* Assets.xcassets */; };
+		692480221C3B1C8A00C45A7E /* Jenkins-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 692480211C3B1C8A00C45A7E /* Jenkins-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		692480271C3B1C8A00C45A7E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692480261C3B1C8A00C45A7E /* InterfaceController.swift */; };
+		692480291C3B1C8A00C45A7E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692480281C3B1C8A00C45A7E /* ExtensionDelegate.swift */; };
+		6924802B1C3B1C8A00C45A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6924802A1C3B1C8A00C45A7E /* Assets.xcassets */; };
+		6924802F1C3B1C8A00C45A7E /* Jenkins-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 692480151C3B1C8A00C45A7E /* Jenkins-Watch.app */; };
 		697B385F1C3B0B0300516E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B385E1C3B0B0300516E79 /* AppDelegate.swift */; };
 		697B38611C3B0B0300516E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B38601C3B0B0300516E79 /* ViewController.swift */; };
 		697B38641C3B0B0300516E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697B38621C3B0B0300516E79 /* Main.storyboard */; };
@@ -21,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		692480231C3B1C8A00C45A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697B38531C3B0B0300516E79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 692480201C3B1C8A00C45A7E;
+			remoteInfo = "Jenkins-Watch Extension";
+		};
+		6924802D1C3B1C8A00C45A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697B38531C3B0B0300516E79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 692480141C3B1C8A00C45A7E;
+			remoteInfo = "Jenkins-Watch";
+		};
 		697B38701C3B0B0300516E79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 697B38531C3B0B0300516E79 /* Project object */;
@@ -30,8 +51,42 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		692480331C3B1C8A00C45A7E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				692480221C3B1C8A00C45A7E /* Jenkins-Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		692480371C3B1C8A00C45A7E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6924802F1C3B1C8A00C45A7E /* Jenkins-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		38084CFD6AC0A425E66622AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		692480151C3B1C8A00C45A7E /* Jenkins-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jenkins-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		692480181C3B1C8A00C45A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6924801A1C3B1C8A00C45A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6924801C1C3B1C8A00C45A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		692480211C3B1C8A00C45A7E /* Jenkins-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Jenkins-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		692480261C3B1C8A00C45A7E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		692480281C3B1C8A00C45A7E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6924802A1C3B1C8A00C45A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6924802C1C3B1C8A00C45A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697B385B1C3B0B0300516E79 /* Jenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jenkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697B385E1C3B0B0300516E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		697B38601C3B0B0300516E79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +106,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6924801E1C3B1C8A00C45A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		697B38581C3B0B0300516E79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,11 +150,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		692480161C3B1C8A00C45A7E /* Jenkins-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				692480171C3B1C8A00C45A7E /* Interface.storyboard */,
+				6924801A1C3B1C8A00C45A7E /* Assets.xcassets */,
+				6924801C1C3B1C8A00C45A7E /* Info.plist */,
+			);
+			path = "Jenkins-Watch";
+			sourceTree = "<group>";
+		};
+		692480251C3B1C8A00C45A7E /* Jenkins-Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				692480261C3B1C8A00C45A7E /* InterfaceController.swift */,
+				692480281C3B1C8A00C45A7E /* ExtensionDelegate.swift */,
+				6924802A1C3B1C8A00C45A7E /* Assets.xcassets */,
+				6924802C1C3B1C8A00C45A7E /* Info.plist */,
+			);
+			path = "Jenkins-Watch Extension";
+			sourceTree = "<group>";
+		};
 		697B38521C3B0B0300516E79 = {
 			isa = PBXGroup;
 			children = (
 				697B385D1C3B0B0300516E79 /* Jenkins */,
 				697B38721C3B0B0300516E79 /* JenkinsUITests */,
+				692480161C3B1C8A00C45A7E /* Jenkins-Watch */,
+				692480251C3B1C8A00C45A7E /* Jenkins-Watch Extension */,
 				697B385C1C3B0B0300516E79 /* Products */,
 				CEB787817308F5572142D852 /* Pods */,
 				270FEA8A18D97BD5EBE45BDF /* Frameworks */,
@@ -104,6 +189,8 @@
 			children = (
 				697B385B1C3B0B0300516E79 /* Jenkins.app */,
 				697B386F1C3B0B0300516E79 /* JenkinsUITests.xctest */,
+				692480151C3B1C8A00C45A7E /* Jenkins-Watch.app */,
+				692480211C3B1C8A00C45A7E /* Jenkins-Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +230,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		692480141C3B1C8A00C45A7E /* Jenkins-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 692480341C3B1C8A00C45A7E /* Build configuration list for PBXNativeTarget "Jenkins-Watch" */;
+			buildPhases = (
+				692480131C3B1C8A00C45A7E /* Resources */,
+				692480331C3B1C8A00C45A7E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				692480241C3B1C8A00C45A7E /* PBXTargetDependency */,
+			);
+			name = "Jenkins-Watch";
+			productName = "Jenkins-Watch";
+			productReference = 692480151C3B1C8A00C45A7E /* Jenkins-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		692480201C3B1C8A00C45A7E /* Jenkins-Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 692480301C3B1C8A00C45A7E /* Build configuration list for PBXNativeTarget "Jenkins-Watch Extension" */;
+			buildPhases = (
+				6924801D1C3B1C8A00C45A7E /* Sources */,
+				6924801E1C3B1C8A00C45A7E /* Frameworks */,
+				6924801F1C3B1C8A00C45A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jenkins-Watch Extension";
+			productName = "Jenkins-Watch Extension";
+			productReference = 692480211C3B1C8A00C45A7E /* Jenkins-Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		697B385A1C3B0B0300516E79 /* Jenkins */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 697B38781C3B0B0300516E79 /* Build configuration list for PBXNativeTarget "Jenkins" */;
@@ -153,10 +274,12 @@
 				697B38591C3B0B0300516E79 /* Resources */,
 				8476FF24EE8F767EF12B5227 /* Embed Pods Frameworks */,
 				73EE2078BD004DBE58B90845 /* Copy Pods Resources */,
+				692480371C3B1C8A00C45A7E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6924802E1C3B1C8A00C45A7E /* PBXTargetDependency */,
 			);
 			name = Jenkins;
 			productName = Jenkins;
@@ -191,6 +314,13 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Tayal, Rishabh";
 				TargetAttributes = {
+					692480141C3B1C8A00C45A7E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CEBY93VF85;
+					};
+					692480201C3B1C8A00C45A7E = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					697B385A1C3B0B0300516E79 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = CEBY93VF85;
@@ -216,11 +346,30 @@
 			targets = (
 				697B385A1C3B0B0300516E79 /* Jenkins */,
 				697B386E1C3B0B0300516E79 /* JenkinsUITests */,
+				692480141C3B1C8A00C45A7E /* Jenkins-Watch */,
+				692480201C3B1C8A00C45A7E /* Jenkins-Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		692480131C3B1C8A00C45A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6924801B1C3B1C8A00C45A7E /* Assets.xcassets in Resources */,
+				692480191C3B1C8A00C45A7E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6924801F1C3B1C8A00C45A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6924802B1C3B1C8A00C45A7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		697B38591C3B0B0300516E79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +438,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6924801D1C3B1C8A00C45A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692480291C3B1C8A00C45A7E /* ExtensionDelegate.swift in Sources */,
+				692480271C3B1C8A00C45A7E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		697B38571C3B0B0300516E79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +471,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		692480241C3B1C8A00C45A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 692480201C3B1C8A00C45A7E /* Jenkins-Watch Extension */;
+			targetProxy = 692480231C3B1C8A00C45A7E /* PBXContainerItemProxy */;
+		};
+		6924802E1C3B1C8A00C45A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 692480141C3B1C8A00C45A7E /* Jenkins-Watch */;
+			targetProxy = 6924802D1C3B1C8A00C45A7E /* PBXContainerItemProxy */;
+		};
 		697B38711C3B0B0300516E79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 697B385A1C3B0B0300516E79 /* Jenkins */;
@@ -321,6 +489,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		692480171C3B1C8A00C45A7E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				692480181C3B1C8A00C45A7E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		697B38621C3B0B0300516E79 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,6 +516,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		692480311C3B1C8A00C45A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jenkins-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtayal.Jenkins.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		692480321C3B1C8A00C45A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jenkins-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtayal.Jenkins.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		692480351C3B1C8A00C45A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Jenkins_Watch_Extension;
+				INFOPLIST_FILE = "Jenkins-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtayal.Jenkins.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		692480361C3B1C8A00C45A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Jenkins_Watch_Extension;
+				INFOPLIST_FILE = "Jenkins-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtayal.Jenkins.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		697B38761C3B0B0300516E79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -476,6 +714,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		692480301C3B1C8A00C45A7E /* Build configuration list for PBXNativeTarget "Jenkins-Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692480311C3B1C8A00C45A7E /* Debug */,
+				692480321C3B1C8A00C45A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		692480341C3B1C8A00C45A7E /* Build configuration list for PBXNativeTarget "Jenkins-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692480351C3B1C8A00C45A7E /* Debug */,
+				692480361C3B1C8A00C45A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		697B38561C3B0B0300516E79 /* Build configuration list for PBXProject "Jenkins" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
