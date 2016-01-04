@@ -16,6 +16,8 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableView.tableFooterView = UIView()
+        
         let url = NSUserDefaults.standardUserDefaults().stringForKey(HostBaseURLKey)
         BackendUtil.getWith(url!) { (result, error) -> Void in
             if let result = result as? Dictionary<String, AnyObject> {
